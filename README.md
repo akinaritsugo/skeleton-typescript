@@ -28,7 +28,7 @@ C:.
 
 1. 必要モジュールインストール
     ```
-    npm install --dev typescript 
+    npm install --save-dev typescript @types/node
     ```
 
 1. 初期設定
