@@ -69,11 +69,11 @@ C:.
               "type": "node",
               "request": "launch",
               "name": "プログラムの起動",
-              "program": "${workspaceFolder}/src/index.ts",
+              "program": "${workspaceFolder}/dist/index.js",
               "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
               ],
-              "preLaunchTask": "npm: build"
+              "preLaunchTask": "build"
             }
           ]
         }
@@ -93,7 +93,7 @@ C:.
                 "kind": "build",
                 "test": true
               },
-              "label": "npm: build",
+              "label": "build",
               "detail": "tsc --build"
             }
           ]
