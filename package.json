@@ -7,7 +7,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build tsconfig.json"
   },
   "author": "Akinari Tsugo",
   "license": "MIT"

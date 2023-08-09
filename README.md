@@ -32,6 +32,26 @@ C:.
     ```
 
 1. 初期設定
+    1. `/package.json`
+
+        `scripts` に `build` タスクを追加
+
+        ```
+        {
+          "name": "skelton",
+          "version": "1.0.0",
+          "description": "",
+          "main": "index.js",
+          "devDependencies": {
+            "typescript": "^5.0.4"
+          },
+          "scripts": {
+            "build": "tsc --build tsconfig.json"
+          },
+          "author": "Akinari Tsugo",
+          "license": "MIT"
+        }
+        ```
 
     1. `/tsconfig.json`
 
@@ -46,6 +66,8 @@ C:.
             "module": "commonjs",
             "sourceMap": true,
             "outDir": "./dist",
+            "allowSyntheticDefaultImports": true,
+            "esModuleInterop": true,
             "strict": true, 
             "skipLibCheck": true
           },
@@ -73,7 +95,7 @@ C:.
               "outFiles": [
                 "${workspaceFolder}/dist/**/*.js"
               ],
-              "preLaunchTask": "build"
+              "preLaunchTask": "npm: build"
             }
           ]
         }
@@ -93,7 +115,7 @@ C:.
                 "kind": "build",
                 "test": true
               },
-              "label": "build",
+              "label": "npm: build",
               "detail": "tsc --build"
             }
           ]

@@ -9,7 +9,7 @@
         "kind": "build",
         "test": true
       },
-      "label": "build",
+      "label": "npm: build",
       "detail": "tsc --build"
     }
   ]
